@@ -10,7 +10,6 @@ import random
 
 
 def guess_num(attempts, x):
-    print("attempts", attempts)
     if attempts == 0:
         print(f'Игра окончена! Ответ: {x}')
         return
@@ -27,7 +26,6 @@ def guess_num(attempts, x):
 
 
 x = random.randint(0, 100)
-print(x)
 attempts = 10
 guess_num(attempts, x)
 
