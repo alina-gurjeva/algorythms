@@ -2,7 +2,7 @@
 
 import random
 
-len_array_nums = 10
+len_array_nums = 3
 min_array_nums = -10
 max_array_nums = 10
 
@@ -15,6 +15,7 @@ for ind, element in enumerate(array_nums):
     if element < 0:
         if max_neg_el is None:
             max_neg_el = element
+            pos = ind
         else:
             if element > max_neg_el:
                 max_neg_el = element
